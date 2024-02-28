@@ -38,6 +38,7 @@ router.patch(
 
 router.get(
   '/',
+  auth('admin'),
   auth(
     USER_ROLE.superAdmin,
     USER_ROLE.admin,
